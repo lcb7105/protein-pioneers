@@ -10,7 +10,7 @@ Protein Separation Simulation Project 2024-25
 
 ## Sponsor
 - RIT College of Science
-- - Paul Craig
+  - Paul Craig
 
 ## Coach
 - Mark Wilson
