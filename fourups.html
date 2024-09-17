@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;" theme="light">
+  <head>
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme) document.documentElement.setAttribute('theme', theme);
+    </script>
+    <title>Protein Pioneers - 4-Ups</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/brands.css" rel="stylesheet" />
+    <link type="text/css" href="assets/css/solid.css" rel="stylesheet" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/js/materialize.min.js"></script>
+    <!--<script type="text/javascript" href="script.js"></script>-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {
+          activeClass = "doc-active"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper blue">
+              <a href="#" class="brand-logo">P P</a>
+              <ul id="nav-mobile" class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fourups.html" class="active">Weekly 4-Ups</a></li>
+                <li><a href="#" class="disabled">Team Time Tracking</a></li>
+                <li><a href="#" class="disabled">Design Artifacts</a></li>
+                <!--<li><a href="#" id="theme-switch"><i class="fa-solid fa-toggle-on"></i></a></li>-->
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Protein Separation Simulation Project</h1>
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <div id="week-of-9-17" class="section scrollspy">
+            <h3>Week of 9/10 - 9/17</h3>
+            <img class="responsive-img" src="9-17-4-up.png"/>
+          </div>
+          <div id="week-of-9-10" class="section scrollspy">
+            <h3>Week of 9/3 - 9/10</h3>
+            <img class="responsive-img" src="9-10-4-up.png"/>
+          </div>
+        </div>
+        <div class="col hide-on-small-only m3 l2">
+          <div class="toc-wrapper pinned">
+            <ul class="section table-of-contents">
+              <li><a href="#week-of-9-17">Week of 9/10 - 9/17</a></li>
+              <li><a href="#week-of-9-10">Week of 9/3 - 9/10</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
