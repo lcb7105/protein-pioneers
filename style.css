@@ -1,5 +1,8 @@
-body{
+html, body, button, input, optgroup, select, textarea {
   font-family: "SUSE", sans-serif;
+}
+
+body{
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
