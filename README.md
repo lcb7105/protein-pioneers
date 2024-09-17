@@ -1,13 +1,19 @@
-# protein-pioneers
-Project Website for Senior Project 2024-25
-
 # Protein Pioneers
+Protein Separation Simulation Project 2024-25
+
 ## Members:
+- Toula Elwell (Project Manager)
 - Castor Grey
 - Cameron Miele (Scrum Master, Communication Lead)
-- Toula Elwell (Project Manager)
-- Bryson
-- Jackson (Networking Lead)
+- Jackson Murphy (Networking Lead)
+- Bryson VerDow
+
+## Sponsor
+- RIT College of Science
+- - Paul Craig
+
+## Coach
+- Mark Wilson
 
 ## Project Synopsis
 (insert synopsis here)
