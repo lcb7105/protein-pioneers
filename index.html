@@ -4,6 +4,12 @@
     <script>
       const theme = localStorage.getItem('theme');
       if (theme) document.documentElement.setAttribute('theme', theme);
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, {
+        // specify options here
+      });
+    });
     </script>
     <title>Protein Pioneers - Home</title>
     <link type="text/css" rel="stylesheet" href="style.css" />
@@ -30,11 +36,17 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="fourups.html">Weekly 4-Ups</a></li>
                 <li><a href="#" class="disabled">Team Time Tracking</a></li>
-                <li><a href="#" class="disabled">Design Artifacts</a></li>
+                <li><a href="#" data-target="artifact-drop" class="dropdown-trigger">Design Artifacts</a></li>
                 <!--<li><a href="#" id="theme-switch"><i class="fa-solid fa-toggle-on"></i></a></li>-->
               </ul>
             </div>
           </nav>
+          <ul id="artifact-drop" class="dropdown-content">
+            <li><a href="methodology.html">Development Methodology</a></li>
+            <li><a href="model.html">Domain Model</a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#!">three</a></li>-->
+          </ul>
         </div>
     </header>
     <div class="container">

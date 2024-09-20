@@ -26,6 +26,11 @@
           activeClass = "doc-active"
         });
       });
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, {
+      });
+    });
     </script>
   </head>
   <body>
@@ -43,6 +48,12 @@
               </ul>
             </div>
           </nav>
+          <ul id="artifact-drop" class="dropdown-content">
+            <li><a href="methodology.html">Development Methodology</a></li>
+            <li><a href="model.html">Domain Model</a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#!">three</a></li>-->
+          </ul>
         </div>
     </header>
     <div class="container">
