@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;" theme="light">
+  <head>
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme) document.documentElement.setAttribute('theme', theme);
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, {
+        // specify options here
+      });
+    });
+    </script>
+    <title>Protein Pioneers - Home</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/brands.css" rel="stylesheet" />
+    <link type="text/css" href="assets/css/solid.css" rel="stylesheet" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/js/materialize.min.js"></script>
+    <!--<script type="text/javascript" href="script.js"></script>-->
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper blue">
+              <a href="#" class="brand-logo">P P</a>
+              <ul id="nav-mobile" class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fourups.html">Weekly 4-Ups</a></li>
+                <li><a href="#" data-target="metrics-drop" class="dropdown-trigger">Performance Metrics</a></li>
+                <li><a href="#" data-target="artifact-drop" class="dropdown-trigger active">Design Artifacts</a></li>
+                <!--<li><a href="#" id="theme-switch"><i class="fa-solid fa-toggle-on"></i></a></li>-->
+              </ul>
+            </div>
+          </nav>
+          <ul id="artifact-drop" class="dropdown-content">
+            <li><a href="methodology.html">Development Methodology</a></li>
+            <li><a href="model.html" class="disabled">Domain Model</a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#!">three</a></li>-->
+          </ul>
+          <ul id="metrics-drop" class="dropdown-content">
+            <li><a href="timesheet.html" class="disabled">Team Time Tracking</a></li>
+            <!--<li><a href="model.html">Domain Model</a></li>-->
+            <!--<li class="divider"></li>
+            <li><a href="#!">three</a></li>-->
+          </ul>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Protein Separation Simulation Project</h1>
+      <div class="row">
+        <div class="col s12">
+          <h3>Development Methodology</h3>
+          <div class="section">
+            <h4>Summary</h4>
+            <p class="flow-text">The Protein Pioneer team has decided to utilize an agile methodology. This methodology lends itself well to producing artifacts, tracking progress, integrating with our chosen tools, producing metrics, and interfacing with the sponsor.</p>
+            <p class="flow-text">With an agile approach, we will be utilizing a Jira board to track the organizational aspects of labor tracking and effort. Each Tuesday meeting, the members of the team will review the state of the Jira board and either create or update stories depending on their respective progress. Members of the team should be in charge of updating the board throughout the week if progress or updates are relevant. Our Thursday meetings with our coach and sponsor will generate feedback on our current progress, and any specific areas that should be focussed on. Our coach and sponsor are able to view our Jira board, so they can be as involved in our operations as they would like.</p>
+            <p class="flow-text">At the end of each sprint, Jira will automatically generate several helpful reports that we may utilize as a portion of our total metrics. These reports include a burndown chart, to visualize the rate at which work was completed, a velocity chart, which is a running average of total points completed, as well as a running count of the total number of points that have been completed. These reports will be used in conjunction with our own generated metrics to track our progress. Total SLOCs will be counted, and in order to ensure code quality, test case passing percentages as well as total code coverage will be used.</p>
+            <p class="flow-text">In addition to the test case artifacts, code quality will be ensured through stringent developer reviews, in which all relevant members of the team will participate. Prior to any developer review, however, incremental progress of features will be shown to the sponsor during our Thursday meetings to gauge feedback and concerns.</p>
+            <p class="flow-text">With each successful developer review, a stable baseline will be generated as an artifact. At the beginning of our project, an initial domain model has been created, which as development increases, will be updated accordingly as a living artifact.</p>
+            <p class="flow-text">Team roles have been initially defined, but may change depending on which aspects of the project need the most attention. Technically, the following roles have been established:</p>
+            <ul>
+              <li>Cameron - Back-end</li>
+              <li>Toula - Front-end</li>
+              <li>Castor - Front-end</li>
+              <li>Jackson - Networking</li>
+              <li>Bryson - Testing</li>
+            </ul>
+            <p class="flow-text">In addition to these roles, certain organizational roles have been filled as follows:</p>
+            <ul>
+              <li>Cameron - Scrum master/team communicator</li>
+              <li>Toula - Team Leader</li>
+              <li>Castor - Website manager</li>
+            </ul>
+            <p class="flow-text">As mentioned previously, these roles will rotate as the project progresses.</p>
+          </div>
+          <div class="divider"></div>
+          <!--<div class="section">
+            <h4>Planned Activities and Artifacts</h4>
+              <ul>
+                <li>Each Tuesday meeting, the team will review the current state of the Jira board</li>
+                <li>Jira produces velocity, burndown, and other charts to track progress at the end of each sprint</li>
+                <li>Each developer merge will be an incremental, stable improvement to the currently available deliverable</li>
+                <li>Feedback from sponsor/coach will inform stories created in following sprints</li>
+                <li>Initial artifacts such as domain model</li>
+                <li>Time Tracking</li>
+                <li>Labeled/Documented Screenshots of website changes/improvements</li>
+              </ul>
+            <h4>Roles</h4>
+Cameron will act as scrum master, maintaining the Jira board
+Cameron will be the team communicator
+Castor will manage the github and team website
+Toula will be the team leader, in charge of submissions and main organizational process as it relates to the senior project
+Toula and Castor will be front-end leads
+Bryson will be the testing lead
+Jackson will be the networking lead
+All members will be active developers in the project
+Standards and Quality Practices
+Tests will be written as part of each development review, where applicable
+Integrate tests with existing testing framework
+All members will participate in development reviews to ensure code quality
+Incremental improvements will be shown to the sponsor to get feedback
+Testing reports/defect %/code coverage %
+Tools
+Jira
+Github
+Google drive
+Metrics and Measurements
+Velocity
+Story points
+Burndown
+Sloc
+Test case passing %
+Test case code coverage
+</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>

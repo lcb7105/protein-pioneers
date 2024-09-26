@@ -22,13 +22,11 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.scrollspy');
-        var instances = M.ScrollSpy.init(elems, {
-          activeClass = "doc-active"
-        });
+        var instances = M.ScrollSpy.init(elems, {activeClass: "doc-active"});
       });
       document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems, {
+      var elems2 = document.querySelectorAll('.dropdown-trigger');
+      var instances2 = M.Dropdown.init(elems2, {
       });
     });
     </script>
@@ -42,15 +40,21 @@
               <ul id="nav-mobile" class="right">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fourups.html" class="active">Weekly 4-Ups</a></li>
-                <li><a href="#" class="disabled">Team Time Tracking</a></li>
-                <li><a href="#" class="disabled">Design Artifacts</a></li>
+                <li><a href="#" data-target="metrics-drop" class="dropdown-trigger">Performance Metrics</a></li>
+                <li><a href="#" data-target="artifact-drop" class="dropdown-trigger">Design Artifacts</a></li>
                 <!--<li><a href="#" id="theme-switch"><i class="fa-solid fa-toggle-on"></i></a></li>-->
               </ul>
             </div>
           </nav>
           <ul id="artifact-drop" class="dropdown-content">
             <li><a href="methodology.html">Development Methodology</a></li>
-            <li><a href="model.html">Domain Model</a></li>
+            <li><a href="model.html" class="disabled">Domain Model</a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#!">three</a></li>-->
+          </ul>
+          <ul id="metrics-drop" class="dropdown-content">
+            <li><a href="timesheet.html" class="disabled">Team Time Tracking</a></li>
+            <!--<li><a href="model.html">Domain Model</a></li>-->
             <!--<li class="divider"></li>
             <li><a href="#!">three</a></li>-->
           </ul>
@@ -60,6 +64,10 @@
       <h1>Protein Separation Simulation Project</h1>
       <div class="row">
         <div class="col s12 m9 l10">
+          <div id="week-of-9-24" class="section scrollspy">
+            <h3>Week of 9/18 - 9/24</h3>
+            <img class="responsive-img" src="9-24-4-up.png"/>
+          </div>
           <div id="week-of-9-17" class="section scrollspy">
             <h3>Week of 9/10 - 9/17</h3>
             <img class="responsive-img" src="9-17-4-up.png"/>
@@ -72,6 +80,7 @@
         <div class="col hide-on-small-only m3 l2">
           <div class="toc-wrapper pinned">
             <ul class="section table-of-contents">
+              <li><a href="#week-of-9-24">Week of 9/18 - 9/24</a></li>
               <li><a href="#week-of-9-17">Week of 9/10 - 9/17</a></li>
               <li><a href="#week-of-9-10">Week of 9/3 - 9/10</a></li>
             </ul>
