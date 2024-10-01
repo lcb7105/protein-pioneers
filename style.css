@@ -10,6 +10,10 @@ body{
   background-size: cover;*/
 }
 
+.brand-logo{
+  font-family: Courier New;
+}
+
 #artifact-drop{
   /* top:65px;*/
 }
