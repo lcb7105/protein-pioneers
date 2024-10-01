@@ -25,6 +25,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/js/materialize.min.js"></script>
     <!--<script type="text/javascript" href="script.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,6 +60,29 @@
       <h1>Protein Separation Simulation Project</h1>
       <div class="row">
         <div class="col s12">
+          <div>
+            <canvas id="line-chart"></canvas>
+          </div>
+        </div>
+        <div class="col s12">
+          <table>
+            <tr>
+              <td></td>
+              <th>Bryson</th>
+              <th>Cameron</th>
+              <th>Castor</th>
+              <th>Jackson</th>
+              <th>Toula</th>
+            </tr>
+            <tr>
+              <th>9/3 - 9/10</th>
+              <td>2h30m</td>
+              <td>2h30m</td>
+              <td>2h30m</td>
+              <td>2h30m</td>
+              <td>2h30m</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -66,3 +90,61 @@
     </footer>
   </body>
 </html>
+<script>
+  const ctx = document.getElementById('line-chart');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['9/3-9/10', '9/10-9/17', '9/17-9/24', '9/24-10/1'],
+      datasets: [{
+        label: 'Bryson',
+        data: [2.5, 2.5, 3, 3],
+        fill: false,
+        borderColor: 'rgb(18, 59, 197)',
+        tension: 0.1
+      },{
+        label: 'Castor',
+        data: [2.5, 4.5, 3.9, 3],
+        fill: false,
+        borderColor: 'rgb(148, 117, 214)',
+        tension: 0.1
+      },{
+        label: 'Cameron',
+        data: [2.5, 1.75, 2.5, 3],
+        fill: false,
+        borderColor: 'rgb(12, 102, 12)',
+        tension: 0.1
+      },{
+        label: 'Jackson',
+        data: [0, 0, 0, 0],
+        fill: false,
+        borderColor: 'rgb(197, 18, 18)',
+        tension: 0.1
+      },{
+        label: 'Toula',
+        data: [2.5, 2.5, 2.5, 2.5],
+        fill: false,
+        borderColor: 'rgb(59, 222, 193)',
+        tension: 0.1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: "Hours per Week"
+          }
+        },
+        x: {
+          title:{
+            display: true,
+            text: "Working Week"
+          }
+        }
+      }
+    }
+  });
+</script>
