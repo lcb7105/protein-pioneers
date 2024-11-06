@@ -123,6 +123,30 @@
               <td>3h30m</td>
               <td>-</td>
             </tr>
+            <tr>
+              <th>10/15 - 10/22</th>
+              <td>5h</td>
+              <td>4h30m</td>
+              <td>2h30m</td>
+              <td>4h30m</td>
+              <td>6h45m</td>
+            </tr>
+            <tr>
+              <th>10/22 - 10/29</th>
+              <td>5h</td>
+              <td>5h</td>
+              <td>3h</td>
+              <td>5h</td>
+              <td>6h45m</td>
+            </tr>
+            <tr>
+              <th>10/29 - 11/5</th>
+              <td>3h30m</td>
+              <td>5h</td>
+              <td>3h30m</td>
+              <td>5h</td>
+              <td>3h45m</td>
+            </tr>
           </table>
         </div>
       </div>
@@ -137,34 +161,34 @@
   new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ['9/3-9/10', '9/10-9/17', '9/17-9/24', '9/24-10/1', '10/1-10/8', '10/8-10/15'],
+      labels: ['9/3-9/10', '9/10-9/17', '9/17-9/24', '9/24-10/1', '10/1-10/8', '10/8-10/15', '10/15 - 10/22', '10/22 - 10/29', '10/29 - 11/5'],
       datasets: [{
         label: 'Bryson',
-        data: [2.5, 2.5, 3, 3, 4, 4],
+        data: [2.5, 2.5, 3, 3, 4, 4, 5, 5, 3.5],
         fill: false,
         borderColor: 'rgb(18, 59, 197)',
         tension: 0.1
       },{
         label: 'Castor',
-        data: [2.5, 4.5, 3.9, 3, 3.5, 3.75],
+        data: [2.5, 4.5, 3.9, 3, 3.5, 3.75, 2.5, 2.5, 3.5],
         fill: false,
         borderColor: 'rgb(148, 117, 214)',
         tension: 0.1
       },{
         label: 'Cameron',
-        data: [2.5, 1.75, 2.5, 3, 4, 0],
+        data: [2.5, 1.75, 2.5, 3, 4, 4, 4, 5, 5],
         fill: false,
         borderColor: 'rgb(12, 102, 12)',
         tension: 0.1
       },{
         label: 'Jackson',
-        data: [2.5, 0, 0, 0, 3.5, 3.5],
+        data: [2.5, 0, 0, 0, 3.5, 3.5, 4.5, 5, 5],
         fill: false,
         borderColor: 'rgb(197, 18, 18)',
         tension: 0.1
       },{
         label: 'Toula',
-        data: [2.5, 2.5, 2.5, 2.5, 3.75, 0],
+        data: [2.5, 3.75, 3.75, 3.5, 3.75, 3.75, 6.75, 6.75, 3.75],
         fill: false,
         borderColor: 'rgb(59, 222, 193)',
         tension: 0.1
